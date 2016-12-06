@@ -1,0 +1,24 @@
+Development Stage:
+November 27 2016
+
+Additions
+Global:
+    +Muscle class
+        +Constructor - Muscle() & Muscle(float,float,float,bool)
+        +Setters - changeContractMotion(Vector3)
+Game Scripts:
+    +MuscleController
+        +Update() contracts and relaxes
+        +Start() initializes all relative classes
+            +Muscle Class
+            +itself (this)
+
+Game Objects:
+    +FullBody - this is the parent class that contains
+        +Body (Node)
+        +Muscle
+
+Overall Test Cases:
+-Muscle works
+    -Contracts and Relaxes relative to Update()
+        -Contract works until some assumed 
